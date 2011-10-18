@@ -1,0 +1,49 @@
+The Deimos Manifesto
+------------------
+
+Deimos is a collection of C header files to publicly available C libraries
+and their translations to D. The idea is that if, in C, to interface to a library
+one would write:
+
+   #include "foo.h"
+
+then the corresponding D code would look like:
+
+   import foo;
+
+or:
+
+   import deimos.foo;
+
+Each C .h file would have a corresponding .d file. Each C directory would
+have a corresponding D directory, for example:
+
+   #include "bar/foo.h"   // C
+
+   import bar.foo; // D
+
+The top level directory of each library will have this subdirectory:
+
+   C/
+
+in which will be the C .h files corresponding to the D ones, so that they can
+be easily compared.
+There will be a one-to-one correspondence of files and directory structure
+between the C and D versions.
+Do not insert any C files whose license will not permit it.
+
+The D import files will be a rote translation of the corresponding C .h file.
+No attempt will be made to fix, improve, refactor or extend the C api. No attempt will
+be made to duplicate the C documentation, or replace it in any way. There
+will be no unittests. Every effort will be made to avoid needing any D specific
+binary files.
+
+When an updated version of the C header files becomes available, those will
+get checked into the C subdirectory tree, and then the corresponding D files
+will get updated.
+
+If different versions of the C APIs are supported, they will be done as branches
+and the branches must be tagged with the same versioning scheme used by the C API files.
+
+The license used for the D versions should match the C ones, as they are a
+derived work.
