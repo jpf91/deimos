@@ -15,8 +15,8 @@
  * See ../lzma.h for information about liblzma as a whole.
  */
 
-module lzma_.index_hash;
-import lzma;
+module deimos.lzma_.index_hash;
+import deimos.lzma;
 
 extern(C):
 

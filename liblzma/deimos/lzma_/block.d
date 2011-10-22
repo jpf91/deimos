@@ -12,8 +12,8 @@
  * See ../lzma.h for information about liblzma as a whole.
  */
 
-module lzma_.block;
-import lzma;
+module deimos.lzma_.block;
+import deimos.lzma;
 
 extern(C):
 

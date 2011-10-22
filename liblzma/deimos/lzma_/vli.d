@@ -23,8 +23,8 @@
  * See ../lzma.h for information about liblzma as a whole.
  */
 
-module lzma_.vli;
-import lzma;
+module deimos.lzma_.vli;
+import deimos.lzma;
 
 extern(C):
 

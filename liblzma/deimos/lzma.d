@@ -27,7 +27,7 @@
  * You can do whatever you want with this file.
  */
 
-module lzma;
+module deimos.lzma;
 
 /***********
  * nothrow *
@@ -59,25 +59,25 @@ module lzma;
 /**************
  * Subheaders *
  **************/
-public import lzma_.version_;
-public import lzma_.base;
-public import lzma_.vli;
-public import lzma_.check;
+public import deimos.lzma_.version_;
+public import deimos.lzma_.base;
+public import deimos.lzma_.vli;
+public import deimos.lzma_.check;
 
 /* Filters */
-public import lzma_.filter;
-public import lzma_.bcj;
-public import lzma_.delta;
-public import lzma_.lzma;
+public import deimos.lzma_.filter;
+public import deimos.lzma_.bcj;
+public import deimos.lzma_.delta;
+public import deimos.lzma_.lzma;
 
 /* Container formats */
-public import lzma_.container;
+public import deimos.lzma_.container;
 
 /* Advanced features */
-public import lzma_.stream_flags;
-public import lzma_.block;
-public import lzma_.index;
-public import lzma_.index_hash;
+public import deimos.lzma_.stream_flags;
+public import deimos.lzma_.block;
+public import deimos.lzma_.index;
+public import deimos.lzma_.index_hash;
 
 /* Hardware information */
-public import lzma_.hardware;
+public import deimos.lzma_.hardware;

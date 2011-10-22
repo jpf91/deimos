@@ -12,8 +12,8 @@
  * See ../lzma.h for information about liblzma as a whole.
  */
 
-module lzma_.version_;
-import lzma;
+module deimos.lzma_.version_;
+import deimos.lzma;
 import std.conv;
 
 extern(C):
