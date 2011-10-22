@@ -47,3 +47,5 @@ and the branches must be tagged with the same versioning scheme used by the C AP
 
 The license used for the D versions should match the C ones, as they are a
 derived work.
+
+Examples can be found in the examples directory.
